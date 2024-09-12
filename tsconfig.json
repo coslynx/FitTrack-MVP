@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "next-auth",
+      "next",
+      "react-share",
+      "recharts",
+      "zustand"
+    ],
+    "lib": [
+      "dom",
+      "esnext",
+      "es2021"
+    ]
+  },
+  "include": [
+    "src",
+    "next.config.js",
+    "pages/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "utils/**/*.ts",
+    "middleware/**/*.ts",
+    "config/**/*.ts",
+    "prisma/schema.prisma"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist"
+  ],
+  "experimental": {
+    "appDir": true
+  }
+}
