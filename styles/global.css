@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-tertiary {
+  @apply bg-transparent hover:bg-gray-100 text-gray-700 font-bold py-2 px-4 rounded;
+}
+
+.form-control {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
+}
+
+.card {
+  @apply bg-white shadow-md rounded px-4 py-4 mb-4;
+}
+
+.table {
+  @apply w-full table-auto text-left;
+}
+
+.table-header {
+  @apply bg-gray-100 text-gray-700 font-bold px-4 py-2;
+}
+
+.table-row {
+  @apply hover:bg-gray-100;
+}
+
+.table-cell {
+  @apply px-4 py-2;
+}
+
+.progress-bar {
+  @apply bg-blue-500 rounded-full w-full h-2;
+}
